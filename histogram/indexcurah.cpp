@@ -3,7 +3,6 @@
 #include <vector>
 #include <string>
 
-// Namespace alias untuk mempermudah pemanggilan
 namespace plt = matplotlibcpp;
 
 int main() {
@@ -47,11 +46,11 @@ int main() {
 
     plt::xticks(x_ticks, bulan);
 
-    plt::ylim(0, 9500); 
+    plt::ylim(0, 500); 
 
 
     std::vector<double> y_ticks;
-    for (int i = 0; i <= 9000; i += 1000) {
+    for (int i = 0; i <= 500; i += 100) {
         y_ticks.push_back(static_cast<double>(i));
     }
 
