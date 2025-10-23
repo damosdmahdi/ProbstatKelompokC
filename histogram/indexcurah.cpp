@@ -51,16 +51,14 @@ int main() {
 
     plt::ylim(0, 9500); 
 
-    // =========================================================
-    // PERUBAHAN DI SINI:
-    // Membuat vektor untuk tanda sumbu Y (0, 1000, 2000, ... 9000)
+
     std::vector<double> y_ticks;
     for (int i = 0; i <= 9000; i += 1000) {
         y_ticks.push_back(static_cast<double>(i));
     }
-    // Terapkan tanda sumbu Y yang baru
+
     plt::yticks(y_ticks);
-    // =========================================================
+
 
     plt::grid(true);
     
