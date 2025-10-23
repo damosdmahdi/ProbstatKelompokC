@@ -7,9 +7,7 @@
 namespace plt = matplotlibcpp;
 
 int main() {
-    // 1. Siapkan Data dari Gambar Anda
-    
-    // Sumbu Y (Curah Hujan) - Tipe data 'double'
+
     std::vector<double> curah_hujan = {
         268.2,  // Januari
         496.1,  // Pebruari
